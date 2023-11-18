@@ -19,7 +19,7 @@ void MaxHeapify(int arr[], int i, int N)
 
 void convertMaxHeap(int arr[], int N)
 {
-    for (int i = (N - 2) / 2; i >= 0; --i)
+    for (int i = N/2-1; i >= 0; --i)
         MaxHeapify(arr, i, N);
 }
 
