@@ -7,7 +7,7 @@ void MaxHeapify(int arr[], int i, int N)
     int r = 2 * i + 2;
     int largest = i;
 
-    if (l < N && arr[l] > arr[i])
+    if (l < N && arr[l] > arr[largest])
         largest = l;
     if (r < N && arr[r] > arr[largest])
         largest = r;
